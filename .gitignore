@@ -19,3 +19,6 @@
 
 # MacOS cache
 .DS_Store
+
+# Generated report
+openapi-lint-report.html
