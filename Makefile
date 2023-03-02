@@ -4,7 +4,7 @@ CWD := $(shell pwd)
 TARGET := /usr/src/oapi-tools
 
 build-oapi-lint-container:
-	docker build -t oapi-lint:latest -f ./tools/Dockerfile-oapi-lint $(CWD)
+	docker build -t oapi-lint:latest -f ./docker/Dockerfile-oapi-lint $(CWD)
 
 # Openapi lint commands
 .PHONY: lint-oapi
