@@ -1,0 +1,20 @@
+# Git
+.git
+
+# IDE
+.idea
+
+# Openapi lint report
+openapi-lint-report.html
+
+# Dockerfile dir
+docker
+
+# Github actions
+.github
+
+# README
+README.md
+
+# Make
+Makefile
