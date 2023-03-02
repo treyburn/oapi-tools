@@ -1,0 +1,9 @@
+FROM golang:1.20
+
+WORKDIR /usr/src/oapi-tools
+
+RUN export PATH="$PATH:$(go env GOPATH)/bin"
+
+RUN go install github.com/daveshanley/vacuum@v0.0.51
+
+CMD vacuum lint -d -e -q ./api/api.yaml
